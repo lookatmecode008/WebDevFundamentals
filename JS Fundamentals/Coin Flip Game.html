@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,4 +59,66 @@
       
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style></style>
+    <title>Coin Fip Game</title>
+</head>
+<body>
+    <aside>
+        <p id="history">Hey</p>
+    </aside>
+    <p id="par">Coin is already in the air, pick a side!</p>
+        <li>Wins:<strong id="Ws"></strong></li>
+        <li>Losses:<strong id="Ls"></strong></li>
+        <br>
+    <button onclick="pickSide('heads')">Heads</button>
+    <button onclick="pickSide('tails')">Tails</button>  
+    <button onclick="
+    localStorage.removeItem('score')
+    document.querySelector('#Ws').innerText = `0`;
+    document.querySelector('#Ls').innerText = `0`
+    ">Reset History</button>
+
+    <script>
+        const score = JSON.parse(localStorage.getItem('score')) || {wins: 0, losses: 0};
+        let outcome = '';
+
+        function flipTheCoin(){
+            const coinFlip = Math.random();
+
+            if (coinFlip <= 0.5) {
+                result = 'heads'
+            }else {
+                result = 'tails'
+            }
+
+            return result
+        }
+        
+        function pickSide(choice) {
+            let coinFlip = flipTheCoin();
+
+            if (choice === coinFlip) {
+                alert('Good');
+                outcome = 'Correct';
+                document.querySelector('#Ws').innerText =` ${score.wins += 1}`;
+
+            } else {
+                alert('Nah bro');
+                outcome = 'Incorrect';
+                document.querySelector('#Ls').innerText = ` ${score.losses += 1}`;
+            }
+           localStorage.setItem('score', JSON.stringify(score))
+        } 
+
+        
+      
+    </script>
+</body>
+>>>>>>> 07f8e3a (Initial Project Files Uploaded via VSCode)
 </html>

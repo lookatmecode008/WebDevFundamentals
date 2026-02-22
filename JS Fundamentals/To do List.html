@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,4 +104,111 @@
 
 </script>    
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .todo-grid {
+            display: grid;
+            grid-template-columns: 200px 150px 100px ;
+            gap:10px;
+            margin:10px;
+            font-size: 15px;
+            align-items: center;
+
+        }
+
+        input {
+            padding: 6px;
+        }
+
+        .js-add {
+            background-color: green;
+            color:white;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .del-button{
+            background: darkred;
+            color:white;
+            border:none;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 10px
+        }
+    </style>
+    
+</head>
+<body>
+    <h3>To do List</h3>
+    <div class="todo-grid" style="align-items: stretch;">
+    <input type="text" placeholder="What to do?" class="js-input name-input" autofocus onkeydown="if (event.key === 'Enter'){addItem()}">
+
+    <input type="date" class="datum date-input">
+
+    <button onclick="addItem()" class="js-add">Add</button>
+</div>
+    <div class="js-array-output todo-grid"></div>
+
+<script>
+    const listItems = [{ todoItem: 'watch youtube', todoDate: '12-12-2012' }]
+    const addButton = document.querySelector('.js-add');
+    const remButton = document.querySelector('.js-remove');
+    const arrayOutput = document.querySelector('.js-array-output');
+
+    JSON.parse(localStorage.getItem('toDoArray'));
+
+    //localStorage.removeItem('toDoArray')
+
+    function createToDoList() {
+        let todoListHTML = ``;
+        for (let i = 0; i < listItems.length; i++) {
+            const todoObj = listItems[i];
+            let name = todoObj.todoItem
+            let date = todoObj.todoDate
+
+            item = `
+                <div>${name}</div>
+                <div>${date}</div>
+                <button onclick= "listItems.splice(${i},1);
+                createToDoList();
+                " class="del-button">Delete</button>
+                </div>
+            `;
+
+            todoListHTML += item;
+
+            document.querySelector('.js-array-output').innerHTML = todoListHTML;
+        }
+    }
+
+    function addItem() {
+        let inputValue = document.querySelector('.js-input');
+        const todoItem = inputValue.value;
+        const dueDate = document.querySelector('.datum');
+        const todoDate = dueDate.value;
+
+        listItems.push({ todoItem, todoDate });
+
+        inputValue.value = '';
+
+        localStorage.setItem('toDoArray', JSON.stringify(listItems))
+
+        createToDoList()
+
+    }
+
+</script>    
+</body>
+>>>>>>> 07f8e3a (Initial Project Files Uploaded via VSCode)
 </html>

@@ -1,0 +1,140 @@
+Project Name: Lesego Public Primary School Website
+Author: Aaron M. Kotela
+Version: 1.3
+Licence: The website, its images and the source code are the sole properties of Lesego Public Primary School and its management team.
+
+
+Purpose
+This is the basic manual and guide to interacting with the website created for Lesego Public Primary School by Aaron M. Kotela in November 2025. It provides guidance regarding basic functions and possible edits for the user (or reader) to introduce. It consists of HTML, CSS and JavaScript that have been customised for both mobile and desktop use.
+
+Installation
+1. Download or clone the project folder (/Website).
+2. Open "index.html" in any browser.
+3. No additional setup is required.
+
+File structure
+/Website
+ 	/.vscode
+ 	/.githubattributes
+ 	/images
+ 	/css
+ 	/index.html
+ 	/Gallery.html
+ 	/Community.html
+ 	/Contacts.html
+ 	/Admissions.html
+ 	/About Us.html
+ 	/FAQs.html
+
+Toolbox
+HTML: Used to construct the skeleton of the website as well as the container of all other languages
+CSS: Used to apply styles and effects to the HTML. Stored internally in each HTML file under a <styles> inside the <head> tag. 
+JS: Used mainly to apply interactivity and user responsiveness to the website (e.g. buttons and dropdowns). Stored internally in each HTML files under a <script> tag at the bottom of the <body> tag. Is intimately linked with CSS.
+Font-awesome: Used as a source of icons in index.html. 
+Github Account: Used to store, host, edit and update the website. Supports version control and multi-user management. A couple of notes:
+		*Login credentials are available on the school google account.
+		*Repo has been made public to support hosting.
+		*Has version control so reverting to last function is possible.
+Formspree: Used to handle the form used the website. Intimately linked to Contacts.html. Alerts form submissions via the school gmail account. Please refer to the site with matters of privacy and file retention.
+Netlify: Used for hosting early versions of the website during testing phases. Supports domain purchases but more expensive than GoDaddy.com. A couple of notes:
+		*Login credentials are available on the school google account.
+		*There is a link to a beta version of the website that is still active, this was part of version control that could not be deactivated in time. 
+		*Netlify is a free hosting service with a build-time limit per month, friendly user interface and linkable to the school Github repo.
+Cloudflare: Used as the best substitute for hosting, domain-purchase and email-server. Not cheap but reliable and easy to maintain.
+
+Usage
+ The code can be edited via any text editor or IDE that permits editing in the aforementioned languages. It is highly recommended that the editor use the free, online IDE in the school's Github repo, this allows for easier tracking and version control.
+ The /css folder houses css styles, the site uses internal css styling (i.e. the styles are inside a tag in the head) so anything in /CSS is out of habit and not necessity.
+ /images contains images used throughout the website, updates require manual change of the website's source code (SEE "HOW TO" SECTION).
+ The site involves three major web applications for its existence, these are:
+ 		🌐GitHub: repository where patches and updates can be done, automatically updates the site.
+ 		🏠Netlify: free hosting platform, can change site's live status and domain name.
+ 		💲Afrihost: domain name vendor.
+ The source code has multiple comments ( green-coloured sentences) throughout, they have been simplified as much as possible for a user-friendly experience**.**
+OBEY THE COMMENTS.
+
+Editing & Maintenance
+This guide shows how to edit the website’s pages and publish updates through GitHub and Netlify.
+You don’t need to be a web developer — just follow the steps carefully.
+
+ How to Edit Website Content
+ 	1. 🌐Go to the GitHub Repository
+   		- Open your web browser and go to the school’s GitHub link (example: https://github.com/SchoolName/website).
+   		- Log in with the school’s GitHub account.
+
+ 	2. 📁Open the File You Want to Edit
+   		- Click on a file like index.html, about.html, or staff.html.
+   		- Click the ✏️ (pencil icon) in the top-right corner to start editing.
+
+ 	3. 🧩Edit Text or Images
+   		- Type your new text directly in place of the old text.
+   		- Be careful not to remove symbols like <p>, <div>, or <h2> — those are part of the website’s structure.
+   		- Uploading New Images:
+ 		i)   In GitHub, open the images folder.
+ 		ii)  Click “Add file → Upload files.”
+ 		iii) Drag and drop your new image.
+ 		iv)  Once it uploads, click “Commit changes.”
+ 		v)   Use the exact same image name in your HTML file (for example, school_court.jpg).
+
+ 	4. 💾Save Your Changes
+   	- Scroll to the bottom of the page.
+   		- Add a short note in the box saying what you changed (e.g., “Updated staff photos”).
+   		- Click “Commit changes.”
+
+ How to Publish the Changes
+ 	You don’t have to do anything extra — Github will handle it for you automatically.
+ 	Once you save your changes on GitHub:
+ 	✅ Github will detect the update.
+ 	✅ It will rebuild and publish the new version automatically.
+ 	✅ The changes will appear on the live website within a few minutes.
+
+Tips and Good Practice
+ 	- Keep image names simple: use only letters, numbers, and underscores (no spaces).
+ 	- Always double-check spelling and layout by viewing the live site after changes.
+ 	- Never delete code you don’t understand — ask the ICT personnel or site manager first.
+ 	- Make small changes and test often.
+
+To keep the school website working properly, please be careful when editing the files. You can safely change text (like names, announcements, or dates), but avoid touching the code symbols.
+
+ 	✅Safe to edit
+ 		-Text between HTML tags (tags are the content of <> and </>):
+ 		Example:<h2>Welcome to Our School</h2> → <h2>Welcome to Sunshine Primary</h2>
+
+ 		-Words or sentences inside quotation marks.
+ 		Example: alert("Thank you for visiting!") → alert("See you soon.")
+
+ 	❌ Do not edit or delete (Changing or deleting these can cause the site to stop working.)
+ 		- Any HTML tags like <div>, <section>, or <p>
+ 		- CSS symbols like { }, ;, or :
+ 		- JavaScript symbols like {}, (), =, or ;
+ 		- Anything that looks like computer code — even if the grammar “looks wrong”.
+
+💡 If you’re not sure whether it’s safe to change something, ask a developer or make a backup copy of the file before editing.
+
+State and Recommendations
+Active link
+Netlify at https://lesegopps.netlify.app/ 
+and Github at https://lesegopps.github.io/school-site/
+
+The school currently has two active links from two hosting-service providers. Either has pros and cons, the first is easier to use and handles forms locally (so Formspree will not be employed) but it does not support version control. The latter is more complex, requires external form handlers and raises matters of security and privacy with its "public repo" demand yet offers arguably the best version control, automatic updates and multi-user code management. Of course it is possible to link the two but only the latter is recommended since it is far more beneficial than the former. The former was also only meant for testing phases and early features but barred unpublishing the website as build-time limits for the month were exceeded, this was reason enough to migrate to Github. At most, hybridising the two is beneficial to a better extent.
+
+2. Security
+The login credentials of each of the sites used are stored in the school's google account for convenience and relatively safe-keeping. These credentials are available upon request from the principal or head administration clerk. Login also uses Two-Factor Authentication so timely communication is essential. 
+In order to host on Github, the repo privacy must be set to public. This means people can access and review the source code. Luckily, changes cannot be committed without the permission of the creator of the repo (i.e. the school Google account).  
+
+2. Google Search Console (GSC)
+The website has been submitted to Google Search Console using "https://lesegopps.github.io/school-site/". GSC is what allows the website to show up on google search results. Since crawling (Google essentially visits your site to see what is it about) was taking too long and a sitemap could not work (I honestly do not know why), individual pages of the website were submitted but there no were significant results at the time of this document. AI had suggested that it would take weeks before the site would appear on Google so it is recommended that the GSC progress be tracked regularly and updated as requested to ensure smooth sailing.
+
+3. Tweaks and Touches
+Insert at least two navigation links/buttons on each webpage, one of them MUST redirect to the home page (This also boosts GSC crawling).  
+Apparently, the picture of the foundation phase educators is below par, retaking and republishing that image is thus recommended.
+The website uses internal JS and CSS (and some in-line styles here and there), an external file would have been too complicated and time consuming at the time. Although, storing the languages in  their external files would greatly reduce the sizes of each file, possible making the website faster to load.
+The images also make the webiste heavier and thus slower to load, compressing then reuplaoding them would greatly improve load speed andrebuild time.
+
+ 
+
+
+ 
+
+
+ 

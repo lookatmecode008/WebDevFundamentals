@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator_1.1</title>
+</head>
+<body>
+        <div id="screen"></div>
+        <div id="myConsole"></div>
+    <div>
+        <button onclick="zer();">0</button>
+        <button onclick="one();">1</button>
+        <button onclick="two();">2</button>
+        <button onclick="thr();">3</button>
+        <button onclick="fur();">4</button>
+        <button onclick="fiv();">5</button>
+        <button onclick="six();">6</button>
+        <button onclick="sev();">7</button>
+        <button onclick="eig();">8</button>
+        <button onclick="nin();">9</button>
+    </div>
+    <div>
+        <button onclick="mul();">*</button>
+        <button onclick="div();">/</button>
+        <button onclick="min();">-</button>
+        <button onclick="add();">+</button>
+        <button onclick="obr();">(</button>
+        <button onclick="cbr();">)</button>
+    </div>
+    <p>
+        <button onclick="eql();">=</button>
+    </p>
+
+    <div id="myConsole"></div>
+    <div id="screen"></div>
+    <script>
+        let calculation = "";
+       
+        function one() {
+           document.getElementById('myConsole').innerText=(calculation += '1') ; 
+        }
+        function two() {
+                document.getElementById('myConsole').innerText = (calculation += '2');
+            }
+        function thr() {
+                document.getElementById('myConsole').innerText = (calculation += '3');
+            }
+        function fur() {
+                document.getElementById('myConsole').innerText = (calculation += '4');
+            }
+                      
+        function fiv() {
+            document.getElementById('myConsole').innerText = (calculation += '5');
+        } 
+        function six() {
+                document.getElementById('myConsole').innerText = (calculation += '6');
+            }
+        function sev() {
+            document.getElementById('myConsole').innerText = (calculation += '7');
+        }
+        function eig() {
+            document.getElementById('myConsole').innerText = (calculation += '8');
+        }
+                        
+        function nin() {
+            document.getElementById('myConsole').innerText = (calculation += '9');
+        }
+        function zer() {
+            document.getElementById('myConsole').innerText = (calculation += '0');
+        }
+                                  
+        function mul() {
+                document.getElementById('myConsole').innerText = (calculation += '*');
+            }
+        function div() {
+                document.getElementById('myConsole').innerText = (calculation += '/');
+            }
+        function min() {
+                document.getElementById('myConsole').innerText = (calculation += '-');
+            }
+        function add() {
+                document.getElementById('myConsole').innerText = (calculation += '+');
+            }
+        function add() {
+            document.getElementById('myConsole').innerText = (calculation += '+');
+        }
+        function obr() {
+            document.getElementById('myConsole').innerText = (calculation += '(');
+        }
+        function cbr() {
+            document.getElementById('myConsole').innerText = (calculation += ')');
+        } 
+            
+        function eql() {
+                document.getElementById('screen').innerText = (eval(calculation));
+            }
+        
+    </script>
+</body>
+</html>
