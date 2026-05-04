@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*
 const projBut = document.querySelector('#projBut')
 const ExpBut = document.querySelector('#ExpBut')
@@ -53,7 +53,6 @@ function displaySection(buttonPressed){
 }
 
 
-=======
 /*
 const projBut = document.querySelector('#projBut')
 const ExpBut = document.querySelector('#ExpBut')
@@ -106,9 +105,3 @@ function displaySection(buttonPressed){
         quirksArray[3].classList.add('active')
   }
 }
-
-
-
-
-
->>>>>>> 07f8e3a (Initial Project Files Uploaded via VSCode)

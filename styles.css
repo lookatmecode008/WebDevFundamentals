@@ -5,239 +5,9 @@ body {
     text-align: center;
     background: linear-gradient(to bottom, #B2B2B2, #555555, #0D0D0D);
     background-size: cover;
-    font-size: 1.5vw;
-    height: 100%;
-}   
-
-section{
-    min-height: max-content;
-    border-bottom: 1px solid #FFAB00;
-    padding: 2vw 0;
-}
-
-h1,h2,button{
-    margin-bottom: 10px;
-    color: #DA0D0F;
-}
-
-a {
-    color: gold;
-    text-decoration: none;
-}
-
-button {
-    background-color: #0d0d0d00;
-}
-
-.btn {
-    display: inline-block;
-    transform-origin: center;
-    text-decoration: none;
-    margin: 0 2vw;
-    padding: 1vw;
-    border: solid gold 1px;
-    border-radius: 50%;
-    border-top: none;
-    border-left: none;
-    transition: all 0.5s ease;
-    color: gold;
-}
-
-.btn:hover {
-    transform: scale(1.5);
-    background-color: #FFAB00;
-    color: #a1080b;
-}
-
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: start;
-}
-
-.nav-con.active {
-    display: block;
-    border: solid gold 0.1rem;
-    background-color: #292929;
-    height: fit-content;
-    margin: 1rem 0;
-}
-
-.nav-con {
-    display: none;
-}
-
-.nav-con-objects {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-
-}
-
-.nav-con-objects div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: gold solid 1px;
-    min-width: 95%;
-    margin: 1rem;
-    scroll-snap-align: center;
-}
-
-/*=============================== HOME PAGE ==================================*/
-.Hero{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: top;
-    height: fit-content;
-    border-bottom: 1px solid #FFAB00;
-    background-image: url('/storage/emulated/0/Download/a8226118-9c51-4a04-b632-838cbd333914.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}    
-
-img {
-    min-width: 100%;
-    max-height: 50vh;
-    object-fit: contain;
-}
-
-.Tools {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat (5, 1fr);
-    gap: 4px;
-    padding: 20px;
-}
-
-.tools {
-    background: linear-gradient(to bottom, #B2B2B2, #555555, #0D0D0D);
-    padding: 20px;
-    border-radius: 12px;
-    line-height: 1.5rem;
-    transition:all 1s ease-in ;
-    text-align: left;
-}
-
-.tools:hover {
-    transform: scale(1.2);
-    color: #a1080b; 
-    font-weight: 600;
-    font-size: 2.3vh;
-    border: gold solid 1px;
-    animation: Effect 5s infinite ease out;
-}
-
-@keyframes Effect {
-    from {padding-left: 0%; text-align: left; }
-    to {padding-left: 25%; text-align: center;}
-}
-
-/*Ugliest section of my code! Ugh!*/
-#h {
-    grid-row: span 5 / span 5;
-    display: flex;
-    text-align: left;
-    align-content: space-around;
-    line-height: 500%;
-    padding:0 0 0 0.5rem;
-    }
-    #a {grid-column: span 2 / span 2;grid-row: span 2 / span 2;grid-column-start: 3;grid-row-start: 1;}
-    #r {grid-row: span 2 / span 2;grid-column-start: 2;grid-row-start: 1;}
-    #sa {grid-row: span 3 / span 3;grid-column-start: 2;grid-row-start: 3;}
-    #sr {grid-column: span 2 / span 2;grid-column-start: 3;grid-row-start: 3;}
-    #g {grid-column: span 2 / span 2;grid-column-start: 3; grid-row-start: 4;}
-    #p {grid-column: span 2 / span 2;grid-column-start: 3;grid-row-start: 5;}
-
-.Phone {
-    display: flex;
-    flex-direction: column;
-}
-
-#Contacts {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.figure {
-    flex-direction: column;
-    flex: 1 1 100%;
-}
-
-.Footr {
-   background-color: linear-gradient(to top, #7B7B7B, #292929);
-   font-size: 1rem;
-   margin-top: 10px;
-}
-
-/*============================= QUIRKS.HTML ==================================*/
-
-ol {
-    line-height: 3;
-    list-style-type: none;
-    text-align: left;  
-}
- #skills {
-    /*display: flex;*/
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 1rem;
-}
-
-/*=============================== DIARY.HTML =================================*/
-#Diary-body {
-    display: flex;
-    flex-direction: row;
-    overflow-y:hidden;
-    min-height:80%;
-}
-
-#Diary-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
- 
-}
-
-#Diary-nav button {
-    margin: 3px;
-    display: block;
-    width: 100%;
-    
-}
-
-.thoughts{
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    overflow-x:hidden;
-    max-height: 500px;
-    border-bottom: solid red 1px;
-    padding:0rem 1rem;
-    box-sizing: border-box;
-}
-
-.thoughtcontent {
-    min-width: 100%;
-    margin-left:1rem;
-}
-
-
-
-
-/*=========================== UNIVERSAL STYLING ==============================*/
-body {
-    color: #FFD700;
-    font-family: Arial;
-    text-align: center;
-    background: linear-gradient(to bottom, #B2B2B2, #555555, #0D0D0D);
-    background-size: cover;
     font-size: 2vw;
     height: 100%;
-    line-height: 10vh;
+    line-height: 5vh;
     padding:1rem 2rem
 }   
 
@@ -254,6 +24,7 @@ h1,h2,button{
 a {
     color: gold;
     text-decoration: none;
+    font-size: x-large;
 }
 
 .btn { 
@@ -282,13 +53,20 @@ a {
 
 .Hero {
     min-height:100vh;
-    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 1fr 1fr;
+}
+
+.Hero > *{
+    flex:  1 1 auto;
 }
 
 .Intro{
     display: flex;
     flex-direction:row;
-    padding: 0;
+    margin-bottom:2rem;
+    border-bottom: gold solid 0.1rem;
 }    
 
 .Bio{
@@ -297,6 +75,22 @@ a {
 
 .aboutMore{
     display:flex;
+    width: 100%;
+}
+
+.aboutMoreNav{
+    flex: 1 1 100%;
+    border: blue solid 0.1rem;
+    position: relative;  
+    height: 50vh;
+    overflow: hidden;
+    padding: 0% 2%;
+    font-size: 1vw;
+}
+
+.aboutMoreNav span {
+    background-color: red;
+      
 }
 
 .img img {
@@ -307,7 +101,7 @@ a {
     max-height: min-content;
 }
 
-.aboutMore a, .myStuffNav button {
+.myStuffNav button {
     flex: 1 1 100%;
 }
 
@@ -333,8 +127,6 @@ a {
     border-radius: 12px;
     transition:all 1s ease-in;
     line-height: 2rem;
-  
-   
     scroll-snap-align: center;;
 }
 
@@ -417,6 +209,7 @@ nav {
 /*When function parameter is true, apply the following styles, otherwise apply the default styles above */
 @media (max-width:768px) {
     body {
+
         color: white; 
         font-size: 2vh;
         padding: 1% 2rem; 
@@ -463,8 +256,7 @@ ol {
     flex-direction: row;
     overflow-y:hidden;
     min-height:80%;
-    
-    
+    line-height: 3vw;
 }
 
 #Diary-nav {
@@ -474,11 +266,12 @@ ol {
  
 }
 
-#Diary-nav button {
+#Diary-nav a {
     margin: 3px;
     display: block;
     width: 100%;
-    
+    text-align: left;
+    font-size: large;
 }
 
 .thoughts{
@@ -492,7 +285,7 @@ ol {
     box-sizing: border-box;
     text-align: right;
     margin: 0.5rem 2rem;
-    font-size: x-small;
+    font-size: small;
 }
 
 .thoughtcontent {
@@ -503,11 +296,12 @@ ol {
     
 }
 
-.thoughtcontent:target{
+.thoughtcontent:target{ 
+    display: block;
     font-size: larger;
-    padding: 1rem 0;
+    padding: 1rem 0 1rem 0.5rem;
     text-align: left;
     color: #FFD700;
-    display: block;
+    border-left: solid 0.1rem gold ;
 }
 
