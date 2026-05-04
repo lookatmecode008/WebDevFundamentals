@@ -105,3 +105,5 @@ function displaySection(buttonPressed){
         quirksArray[3].classList.add('active')
   }
 }
+
+//From Diary.html
